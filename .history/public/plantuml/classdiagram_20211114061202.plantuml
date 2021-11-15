@@ -1,0 +1,25 @@
+@startuml
+entity admin{
+    * id_admin : primary_key
+    --
+    * name : VARCHAR
+    
+}
+entity books{
+
+}
+entity detail_books{
+    * id_book : primary_key
+    -- 
+    * title : VARCHAR
+}
+entity user{
+
+}
+entity members{
+
+}
+entity report{
+
+}
+@enduml

@@ -1,0 +1,49 @@
+@startuml
+entity admin{
+    * id_admin : primary_key
+    --
+    * name : VARCHAR
+    * username : VARCHAR
+    * email : VARCHAR
+    * password : VARCHAR
+}
+entity books{
+    * id_book : primary_key
+    --
+    * id_category : foreign_key 
+    * id_detail_book : foreign_key 
+    * id_code_books : VARCHAR
+}
+entity detail_books{
+    * id_detail_book : primary_key
+    -- 
+    * id_code_book : foreign_key
+    * title : VARCHAR
+    * creator : VARCHAR
+    * publisher : VARCHAR
+    * borrowed_stock : INTEGER
+    * page : INTEGER
+    ilustrator : VARCHAR
+    publication_date : DATETIME
+}
+entity members{
+    * id_member : primary_key
+    -- 
+    * name : VARCHAR 
+    * username : VARCHAR
+    * email : VARCHAR
+    * password : VARCHAR
+    * class : VARCHAR
+    * age : INTEGER
+    * address : TEXT
+    * Faculty / major : VARCHAR
+}
+entity report{
+    * id_report : primary_key
+    -- 
+    * id_member : foreign_key
+    * id_book : foreign_key
+    * borrow_date : DATETIME
+    * return_date : DATETIME
+}
+@enduml

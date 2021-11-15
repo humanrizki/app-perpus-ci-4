@@ -1,0 +1,20 @@
+@startuml
+entity admin{
+
+}
+entity books{
+
+}
+entity detail_books{
+
+}
+entity user{
+
+}
+entity members{
+
+}
+entity report{
+    
+}
+@enduml

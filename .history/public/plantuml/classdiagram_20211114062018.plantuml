@@ -1,0 +1,37 @@
+@startuml
+entity admin{
+    * id_admin : primary_key
+    --
+    * name : VARCHAR
+    
+}
+entity books{
+
+}
+entity detail_books{
+    * id_book : primary_key
+    -- 
+    * title : VARCHAR
+    * creator : VARCHAR
+    penerbit : VARCHAR
+    ilustrator : VARCHAR
+    halaman : INTEGER
+    tahun_rilis : DATETIME
+}
+entity members{
+    * id_member
+    -- 
+    * name : VARCHAR 
+    * kelas : VARCHAR
+    * Jurusan / prodi : VARCHAR
+    id_minjam : = id_detail_minjam
+}
+entity detail_minjam{
+    * id_dipinjami : primary_key
+    -- 
+
+}
+entity report{
+
+}
+@enduml
